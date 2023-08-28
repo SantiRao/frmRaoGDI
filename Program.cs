@@ -16,7 +16,7 @@ namespace frmRaoGDI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmArkaniod());
+            Application.Run(new frmArkanoidLVL2());
         }
     }
 }

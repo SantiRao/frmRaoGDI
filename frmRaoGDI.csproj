@@ -52,6 +52,12 @@
     <Compile Include="frmArkaniod.Designer.cs">
       <DependentUpon>frmArkaniod.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmArkanoidLVL2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArkanoidLVL2.Designer.cs">
+      <DependentUpon>frmArkanoidLVL2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmArkaniod.resx">
       <DependentUpon>frmArkaniod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArkanoidLVL2.resx">
+      <DependentUpon>frmArkanoidLVL2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

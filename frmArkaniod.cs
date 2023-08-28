@@ -30,7 +30,22 @@ namespace frmRaoGDI
 
         private void btnEmpezar_Click(object sender, EventArgs e)
         {
+            // enciende el reloj
+            timer1.Enabled = true;
             btnEmpezar.Hide();
         }
-    }
+
+        Random aleatorio = new Random();
+        int ejeX = 0;
+        int ejeY = 0;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            ejeX = aleatorio.Next(0, 612);
+            ejeY = aleatorio.Next(0,456);
+            picNave.Location = new Point(ejeX, 380);
+            picPelota.Location = new Point(285, ejeY);
+        }
+    }   
+
 }

@@ -40,5 +40,13 @@ namespace frmRaoGDI
 
             Controls.Add(basePapel);
         }
+
+        private void frmMain_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left)
+            {
+                MessageBox.Show("izquierda");
+            }
+        }
     }
 }
