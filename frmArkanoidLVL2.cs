@@ -30,7 +30,6 @@ namespace frmRaoGDI
             // enciende el reloj
             Reloj.Enabled = true;
             btnEmpezar.Hide();
-            EjeY = picPelota.Location.Y;
             this.Focus();
         }
 
@@ -57,6 +56,18 @@ namespace frmRaoGDI
             EjeX = picNave.Location.X;
 
             picNave.Location = new Point(EjeX + 25, picNave.Location.Y);
+        }
+
+        private void Reloj_Tick(object sender, EventArgs e)
+        {
+            EjeY = picPelota.Location.Y;
+
+            picPelota.Location = new Point(picPelota.Location.X, EjeY - 5);
+        }
+
+        private void Contenedor_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

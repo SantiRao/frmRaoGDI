@@ -42,6 +42,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.Contenedor)).BeginInit();
             this.SuspendLayout();
             // 
+            // Reloj
+            // 
+            this.Reloj.Enabled = true;
+            this.Reloj.Interval = 200;
+            this.Reloj.Tick += new System.EventHandler(this.Reloj_Tick);
+            // 
             // picPelota
             // 
             this.picPelota.BackColor = System.Drawing.Color.Transparent;
@@ -70,6 +76,7 @@
             this.Contenedor.Size = new System.Drawing.Size(612, 456);
             this.Contenedor.TabIndex = 4;
             this.Contenedor.TabStop = false;
+            this.Contenedor.Click += new System.EventHandler(this.Contenedor_Click);
             // 
             // btnEmpezar
             // 
